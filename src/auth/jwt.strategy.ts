@@ -21,6 +21,7 @@ export class JwtStrategy extends PassportStrategy(Strategy){
         const {username} = payload
         const user =  await this.userRepository.findOne({username}) //OJO con esta validación de token porque consulta Bd en cada peticion
         if(!user) throw new UnauthorizedException()
+        console.log('>>>',user);
         return user
 
         //En el Request pondra la informacion del user en el Request
