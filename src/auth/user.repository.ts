@@ -19,7 +19,7 @@ export class UserRepository extends Repository<User>{
             // Unique username
             await user.save()
         } catch (error) {
-            // console.log('error>>',error);
+            // console.log(error);
             if(error.code === '23505') //Duplicated username
                 throw new ConflictException('Username already exists')
             else

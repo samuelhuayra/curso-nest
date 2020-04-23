@@ -23,7 +23,7 @@ export class AuthController {
     // @Post('/test')
     // @UseGuards(AuthGuard())
     // test(@Req() req){
-    //     console.log('>>>',req);
+    //     console.log(req);
     //     // user: User {
     //     //     id: 1,
     //     //     username: 'samuel',
@@ -36,6 +36,6 @@ export class AuthController {
     // @Post('/test')
     // @UseGuards(AuthGuard())
     // test(@GetUser() user:User){
-    //     console.log('>>user: ',user);
+    //     console.log('user: ',user);
     // }
 }

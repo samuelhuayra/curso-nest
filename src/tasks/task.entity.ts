@@ -21,4 +21,7 @@ export class Task extends BaseEntity{
         user=> user.tasks,//1User-nTasks
         {eager: false})
     user: User;
+
+    @Column()
+    userId: number;
 }
