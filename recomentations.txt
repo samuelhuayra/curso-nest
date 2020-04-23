@@ -1,0 +1,3 @@
+-Sacar usuario no desde la peticion
+-El usuario saca task tambien
+-Logger Exception no muestra la linea de codigo
